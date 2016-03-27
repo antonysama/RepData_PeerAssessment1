@@ -90,3 +90,7 @@ par(mfrow=c(2,1))
 ###  a time series plot 
 xyplot(steps ~ interval | logical, type="l", data = g, layout=c(1,2))
 dev.off()    
+
+##lastly the knit2html 
+library("knitr")
+knit2html("PA1_template.Rmd", output="PA1_template.html")
